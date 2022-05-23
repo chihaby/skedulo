@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="main">
+    <h1 class="heading">Skedulo</h1>
+    <h2 class="sub-heading">+ Add New Employee</h2>
+    <form class="form" method="GET">
+      <label class="label">Employee number</label><br />
+      <input class="input" type='number' id="employeeId" name="employeeId" placeholder="Employee number" required/><br />
+      <label class="label">Name</label><br />
+      <input class="input" type='text' id="name" name="name" placeholder="Employee name" required /><br />
+      <label class="label">Email</label><br />
+      <input class="input" type='email' id="email" name="email" placeholder="Email address" required/><br />
+      <label class="label">Phone</label><br />
+      <input class='input' type="tel" id="phone" name="phone" placeholder="123 456 7890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"/><br />
+      <button class='submit' type="button" onclick=getEmployeeId()>Submit</button>
+    </form>
+    <div class="list-link">
+      <p id="employee-name"></p>
+      <a href="./pages/list.html">View employee list</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
